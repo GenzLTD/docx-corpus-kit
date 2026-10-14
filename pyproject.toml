@@ -1,0 +1,30 @@
+[project]
+name = "docx-corpus-kit"
+version = "0.1.0"
+description = "White-label toolkit to convert docx->md, keep 1:1 docx<->md pairs, and build a Chinese-friendly full-text index over large docx collections."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "GenzLTD" }]
+keywords = ["docx", "markdown", "full-text-search", "fts5", "chinese", "corpus"]
+dependencies = [
+    "markitdown",
+    "python-docx",
+]
+
+[project.scripts]
+docx-corpus = "docx_corpus.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

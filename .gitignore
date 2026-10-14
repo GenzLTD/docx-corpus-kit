@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated artifacts (not source)
+*.db
+docx_inventory.csv
+docx_inventory.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

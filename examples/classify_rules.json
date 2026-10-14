@@ -1,0 +1,8 @@
+[
+  ["source/*",        "docx-source"],
+  ["rendered/*",      "md-rendered"],
+  ["inbox/**",        "inbox"],
+  ["drafts/**",       "draft"],
+  ["*contract*",      "contract"],
+  ["*proposal*",      "proposal"]
+]
